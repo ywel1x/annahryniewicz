@@ -274,14 +274,20 @@
         <!-- Partners Section -->
         <section class="partners">
             <div class="container">
-                <p class="partners-label">Współpracowali</p>
+                <p class="partners-label">Współpracowałam / Współpracuję</p>
                 <div class="partners-grid">
-                    <span class="partner-logo">Brian Tracy International</span>
-                    <span class="partner-logo">PWN S.A.</span>
-                    <span class="partner-logo">Nowa Era</span>
-                    <span class="partner-logo">Colin Rose</span>
-                    <span class="partner-logo">Szkoły Pro Futuro</span>
-                    <span class="partner-logo">Fundacja ProFuturo</span>
+                    <div class="partner-logo">
+                        <img src="src/briantracy.webp" alt="Brian Tracy International" loading="lazy">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="src/nowaera.webp" alt="Nowa Era" loading="lazy">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="src/profuturo.webp" alt="Szkoły Pro Futuro" loading="lazy">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="src/pwn.webp" alt="PWN S.A." loading="lazy">
+                    </div>
                 </div>
             </div>
         </section>
@@ -289,50 +295,35 @@
         <!-- Contact Section -->
         <section id="contact" class="contact">
             <div class="container">
-                <div class="contact-layout">
-                    <div class="contact-info">
-                        <header class="section-header section-header--left">
-                            <p class="section-eyebrow">Kontakt</p>
-                            <h2 class="section-title">Porozmawiajmy o współpracy</h2>
-                        </header>
-                        <p class="contact-intro">Skontaktuj się, aby otrzymać kartę programu, harmonogram wdrożenia i wycenę dla swojej instytucji.</p>
-                        
-                        <address class="contact-details">
-                            <div class="contact-item">
+                <div class="contact-content">
+                    <header class="section-header">
+                        <p class="section-eyebrow">Kontakt</p>
+                        <h2 class="section-title">Zapytaj o szkolenia</h2>
+                    </header>
+                    <p class="contact-intro">Skontaktuj się, aby otrzymać szczegóły wybranego programu szkoleniowego, harmonogram wdrożenia oraz ewentualną wycenę.</p>
+                    
+                    <address class="contact-details">
+                        <div class="contact-item">
+                            <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <div class="contact-item-content">
                                 <span class="contact-label">Email</span>
-                                <a href="mailto:kontakt@annahryniewicz.pl">kontakt@annahryniewicz.pl</a>
+                                <a href="mailto:a.hryniewicz@profuturo.pl">a.hryniewicz@profuturo.pl</a>
                             </div>
-                            <div class="contact-item">
+                        </div>
+                        <div class="contact-item">
+                            <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <div class="contact-item-content">
                                 <span class="contact-label">Lokalizacja</span>
                                 <span>Warszawa, Polska</span>
                             </div>
-                        </address>
-                    </div>
-                    
-                    <form class="contact-form" id="contactForm" novalidate>
-                        <div class="form-group">
-                            <label for="name">Imię i nazwisko</label>
-                            <input type="text" id="name" name="name" required autocomplete="name">
                         </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required autocomplete="email">
-                        </div>
-                        <div class="form-group">
-                            <label for="organization">Instytucja</label>
-                            <input type="text" id="organization" name="organization" autocomplete="organization">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Wiadomość</label>
-                            <textarea id="message" name="message" rows="4" required></textarea>
-                        </div>
-                        <button type="submit" class="submit-button">
-                            <span>Wyślij wiadomość</span>
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
-                            </svg>
-                        </button>
-                    </form>
+                    </address>
                 </div>
             </div>
         </section>
