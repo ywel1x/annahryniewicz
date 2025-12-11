@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr Anna Hryniewicz — Psycholog, Trener Akademicki</title>
+    <meta name="description" content="Dr Anna Hryniewicz — psycholog i projektantka procesów edukacyjnych. Programy szkoleniowe dla uczelni, samorządów i instytucji publicznych. Współwłaścicielka poradni Holisens w Warszawie.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#hero" class="nav-logo">Dr Anna Hryniewicz</a>
+            <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#szkolenia">Szkolenia</a></li>
+                <li><a href="#holisens">Holisens</a></li>
+                <li><a href="#about">O mnie</a></li>
+                <li><a href="#contact" class="nav-cta">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-eyebrow">Psycholog · Trener akademicki</p>
+                    <h1 class="hero-title">
+                        <span class="title-line">Dr Anna</span>
+                        <span class="title-line title-accent">Hryniewicz</span>
+                    </h1>
+                    <p class="hero-subtitle">Projektuję i prowadzę programy szkoleniowe dla uczelni, samorządów i instytucji publicznych. Łączę wiedzę psychologiczną z praktyką organizacyjną.</p>
+                    <a href="#szkolenia" class="hero-cta">
+                        <span>Poznaj programy szkoleniowe</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="hero-video-wrapper">
+                    <div class="hero-video">
+                        <video 
+                            id="heroVideo"
+                            src="src/omnie.mp4" 
+                            poster="src/sala1.webp"
+                            playsinline
+                            muted
+                            preload="metadata"
+                        ></video>
+                        <button class="video-play-btn" aria-label="Odtwórz wideo" id="heroPlayBtn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="5 3 19 12 5 21 5 3"/>
+                            </svg>
+                        </button>
+                        <button class="video-unmute-btn" id="heroUnmuteBtn" aria-label="Włącz dźwięk">
+                            <span class="unmute-label">Włącz dźwięk</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                                <line x1="23" y1="9" x2="17" y2="15"/>
+                                <line x1="17" y1="9" x2="23" y2="15"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-trust">
+                <span class="trust-label">Współpracowali:</span>
+                <span class="trust-item">SWPS</span>
+                <span class="trust-separator">·</span>
+                <span class="trust-item">Uniwersytet Wrocławski</span>
+                <span class="trust-separator">·</span>
+                <span class="trust-item">Miasto Gdynia</span>
+                <span class="trust-separator">·</span>
+                <span class="trust-item">PARP</span>
+            </div>
+        </section>
+
+        <!-- Holisens Section -->
+        <section id="holisens" class="holisens">
+            <div class="container">
+                <div class="holisens-layout">
+                    <div class="holisens-logo">
+                        <img src="src/holisenslogo.png" alt="Holisens - Poradnia Psychologiczna" loading="lazy">
+                    </div>
+                    <div class="holisens-content">
+                        <h2 class="holisens-title">Współwłaścicielka poradni Holisens</h2>
+                        <p class="holisens-desc">Holisens to profesjonalna poradnia psychologiczna i psychiatryczna w Warszawie. Specjalizujemy się w psychoterapii indywidualnej, terapii par, rodzin oraz diagnostyce ADHD, autyzmu i zaburzeń rozwojowych.</p>
+                        <div class="holisens-locations">
+                            <span class="location-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                Ochota, ul. Filtrowa 30/24
+                            </span>
+                            <span class="location-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                Wilanów, Al. Rzeczypospolitej 2/190
+                            </span>
+                        </div>
+                        <a href="https://holisens.pl" target="_blank" rel="noopener" class="holisens-link">
+                            Odwiedź holisens.pl
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                <polyline points="15 3 21 3 21 9"/>
+                                <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expertise Section -->
+        <section id="expertise" class="expertise">
+            <div class="container">
+                <header class="section-header">
+                    <p class="section-eyebrow">Obszary działania</p>
+                    <h2 class="section-title">Ekspertyza</h2>
+                </header>
+                
+                <div class="expertise-grid">
+                    <article class="expertise-card expertise-featured">
+                        <div class="card-badge">Główna specjalizacja</div>
+                        <h3>Programy szkoleniowe</h3>
+                        <p>Dedykowane cykle szkoleniowe dla kadry akademickiej, zespołów administracyjnych i liderów instytucji publicznych. Każdy program zawiera diagnozę potrzeb, scenariusz wdrożeniowy oraz ewaluację.</p>
+                        <ul class="card-features">
+                            <li>Liderstwo akademickie</li>
+                            <li>Odporność psychiczna zespołów</li>
+                            <li>Komunikacja międzysektorowa</li>
+                            <li>Kultura feedbacku</li>
+                        </ul>
+                        <a href="#contact" class="card-link">Zapytaj o program →</a>
+                    </article>
+                    
+                    <article class="expertise-card">
+                        <h3>Konsultacje strategiczne</h3>
+                        <p>Wsparcie kierownictwa instytucji w projektowaniu polityk dobrostanu, procesów komunikacyjnych i strategii rozwoju kompetencji.</p>
+                        <a href="#contact" class="card-link">Umów konsultację →</a>
+                    </article>
+                    
+                    <article class="expertise-card">
+                        <h3>Superwizja i mentoring</h3>
+                        <p>Regularne spotkania dla zespołów edukacyjnych i społecznych pracujących w wysokim obciążeniu emocjonalnym.</p>
+                        <a href="#contact" class="card-link">Dowiedz się więcej →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Training Programs Section with Video -->
+        <section id="szkolenia" class="training">
+            <div class="container">
+                <header class="section-header section-header--left">
+                    <p class="section-eyebrow">Oferta dla instytucji</p>
+                    <h2 class="section-title">Szkolenia i warsztaty</h2>
+                </header>
+                
+                <div class="training-video-layout">
+                    <!-- Video Invitation -->
+                    <div class="training-video-wrapper">
+                        <div class="training-video">
+                            <video 
+                                id="trainingVideo"
+                                src="src/zaproszenie.mp4"
+                                poster="src/sala1.webp"
+                                controls
+                                playsinline
+                                preload="metadata"
+                            ></video>
+                        </div>
+                        <p class="training-video-caption">Zaproszenie na szkolenia — Dr Anna Hryniewicz</p>
+                    </div>
+                    
+                    <!-- Training List -->
+                    <div class="training-programs">
+                        <article class="training-program-featured">
+                            <span class="training-category">Uczelnie wyższe</span>
+                            <h3>Liderstwo akademickie</h3>
+                            <p>Cykl 6 modułów wspierający dziekanaty i rady wydziałów w zarządzaniu komunikacją i dobrostanem kadry.</p>
+                            <div class="training-meta">
+                                <span class="meta-item">6 spotkań · 24h</span>
+                            </div>
+                        </article>
+                        
+                        <article class="training-program">
+                            <span class="training-category">Samorządy</span>
+                            <h4>Odporność psychiczna zespołów OPS</h4>
+                        </article>
+                        
+                        <article class="training-program">
+                            <span class="training-category">Instytucje publiczne</span>
+                            <h4>Kultura feedbacku w instytucji</h4>
+                        </article>
+                        
+                        <article class="training-program">
+                            <span class="training-category">NGO i kultura</span>
+                            <h4>Komunikacja międzysektorowa</h4>
+                        </article>
+                        
+                        <article class="training-program">
+                            <span class="training-category">Samorządy</span>
+                            <h4>Dialog społeczny w samorządzie</h4>
+                        </article>
+                        
+                        <a href="#contact" class="training-all-cta">
+                            Zapytaj o pełną ofertę
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <section class="testimonial">
+            <div class="container">
+                <figure class="testimonial-content">
+                    <blockquote>
+                        <p>„Program liderstwa akademickiego uporządkował procesy komunikacji między wydziałami i zmniejszył rotację kadry o 18%."</p>
+                    </blockquote>
+                    <figcaption>
+                        <span class="testimonial-source">Uniwersytet SWPS</span>
+                        <span class="testimonial-year">2024</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-layout">
+                    <div class="about-image">
+                        <img src="src/sala1.webp" alt="Dr Anna Hryniewicz podczas szkolenia" loading="lazy">
+                    </div>
+                    <div class="about-content">
+                        <header class="section-header section-header--left">
+                            <p class="section-eyebrow">O mnie</p>
+                            <h2 class="section-title">Łączę psychologię z praktyką organizacyjną</h2>
+                        </header>
+                        <div class="about-text">
+                            <p>Jako doktor psychologii i certyfikowana trenerka akademicka prowadzę procesy rozwojowe w obszarach komunikacji międzywydziałowej, odporności psychicznej kadry oraz świadomego liderstwa instytucjonalnego.</p>
+                            <p>Współpracuję z uczelniami, samorządami i organizacjami pozarządowymi wdrażającymi programy wsparcia psychologicznego. Każdy cykl szkoleniowy projektuję w oparciu o analizę potrzeb, strukturę organizacyjną oraz mierzalne wskaźniki sukcesu.</p>
+                        </div>
+                        <ul class="credentials">
+                            <li>Doktorat z psychologii stosowanej</li>
+                            <li>Certyfikowany trener Instytutu Edukacji Akademickiej</li>
+                            <li>Członkini Polskiego Towarzystwa Psychologicznego</li>
+                            <li>Współwłaścicielka poradni <a href="https://holisens.pl" target="_blank" rel="noopener">Holisens</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section class="partners">
+            <div class="container">
+                <p class="partners-label">Zaufali</p>
+                <div class="partners-grid">
+                    <span class="partner-logo">SWPS</span>
+                    <span class="partner-logo">Uniwersytet Wrocławski</span>
+                    <span class="partner-logo">Miasto Gdynia</span>
+                    <span class="partner-logo">PARP</span>
+                    <span class="partner-logo">NCBR</span>
+                    <span class="partner-logo">Sieć Domów Kultury</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-layout">
+                    <div class="contact-info">
+                        <header class="section-header section-header--left">
+                            <p class="section-eyebrow">Kontakt</p>
+                            <h2 class="section-title">Porozmawiajmy o współpracy</h2>
+                        </header>
+                        <p class="contact-intro">Skontaktuj się, aby otrzymać kartę programu, harmonogram wdrożenia i wycenę dla swojej instytucji.</p>
+                        
+                        <address class="contact-details">
+                            <div class="contact-item">
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:kontakt@annahryniewicz.pl">kontakt@annahryniewicz.pl</a>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-label">Lokalizacja</span>
+                                <span>Warszawa, Polska</span>
+                            </div>
+                        </address>
+                    </div>
+                    
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="name">Imię i nazwisko</label>
+                            <input type="text" id="name" name="name" required autocomplete="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required autocomplete="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="organization">Instytucja</label>
+                            <input type="text" id="organization" name="organization" autocomplete="organization">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Wiadomość</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">
+                            <span>Wyślij wiadomość</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-copy">© 2025 Dr Anna Hryniewicz</span>
+                    <a href="https://holisens.pl" target="_blank" rel="noopener" class="footer-holisens">
+                        <img src="src/holisenslogo.png" alt="Holisens" loading="lazy">
+                    </a>
+                </div>
+                <nav class="footer-links">
+                    <a href="#hero">Początek</a>
+                    <a href="#szkolenia">Szkolenia</a>
+                    <a href="#holisens">Holisens</a>
+                    <a href="#contact">Kontakt</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
